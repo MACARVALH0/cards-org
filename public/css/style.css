@@ -10,13 +10,25 @@ body
     min-height: 500px;
 }
 
-#main-title
+main
 {
-    text-align: left;
-    margin-left: 3%;
+    width: 100dvw;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
-#deck-body
+#main-title
+{
+    text-align: center;
+}
+
+#deck-table
 {
     display: flex;
     padding: 10px;
@@ -30,14 +42,19 @@ body
     padding: 10px;
     margin: 10px;
 
-    background-color:aliceblue;
-    border-radius: 5px;
-    border: 1px solid rgb(30 30 30);
+    background-color:rgb(139, 87, 87);
+    border-radius: 3px;
+    /* border: 1px solid rgb(30 30 30); */
 
     transition-duration: .5s;
 }
 
+.deck-div p
+{
+    color: rgb(245 245 240);
+}
+
 .deck-div:hover
 {
-    background-color:rgb(207, 218, 238);
+    background-color:rgb(182, 102, 102);
 }
