@@ -1,8 +1,10 @@
-const HTML_deck_body = document.querySelector("#deck-body");
+import getDecks from './get_decks.js'
+import setupTable from './setup_table.js'
 
 window.addEventListener("load", async () =>
 {
-    const decks = await getDecks();
-    console.log(decks);
-    createDeckElements(decks);
+    // Solicita ao servidor o deck de cards no banco de dados.
+    const decks = await getDecks(); console.log(decks); // DEBUG
+
+    setupTable(decks);
 });
