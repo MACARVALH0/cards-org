@@ -7,3 +7,6 @@ dev/
 
 # Node modules
 node_modules/
+
+# Data
+data/
